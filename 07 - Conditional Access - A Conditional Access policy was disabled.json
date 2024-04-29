@@ -1,0 +1,84 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "workspace": {
+            "type": "String"
+        }
+    },
+    "resources": [
+        {
+            "id": "[concat(resourceId('Microsoft.OperationalInsights/workspaces/providers', parameters('workspace'), 'Microsoft.SecurityInsights'),'/alertRules/70000000-0000-0000-0000-000000000000')]",
+            "name": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/70000000-0000-0000-0000-000000000000')]",
+            "type": "Microsoft.OperationalInsights/workspaces/providers/alertRules",
+            "kind": "Scheduled",
+            "apiVersion": "2023-12-01-preview",
+            "properties": {
+                "displayName": "[concat(parameters('workspace'),' - Conditional Access - A Conditional Access policy was disabled')]",
+                "description": "A Conditional Access policy was disabled in Azure AD.",
+                "severity": "Low",
+                "enabled": true,
+                "query": "// A Conditional Access policy was disabled.\r\nAuditLogs\r\n| where OperationName  in (\"Update conditional access policy\")\r\n| extend stateOld=extractjson(\"$.state\", tostring(TargetResources[0].modifiedProperties[0].oldValue))\r\n| extend stateNew=extractjson(\"$.state\", tostring(TargetResources[0].modifiedProperties[0].newValue))\r\n| where stateOld == \"enabled\" and stateNew == \"disabled\" \r\n| project TimeGenerated, OperationName, policy=TargetResources[0].displayName, modifiedBy=InitiatedBy.user.userPrincipalName, result=Result, stateOld, stateNew\r\n| order by TimeGenerated desc",
+                "queryFrequency": "PT5M",
+                "queryPeriod": "PT5M",
+                "triggerOperator": "GreaterThan",
+                "triggerThreshold": 0,
+                "suppressionDuration": "PT5H",
+                "suppressionEnabled": false,
+                "startTimeUtc": null,
+                "tactics": [],
+                "techniques": [],
+                "alertRuleTemplateName": null,
+                "incidentConfiguration": {
+                    "createIncident": true,
+                    "groupingConfiguration": {
+                        "enabled": true,
+                        "reopenClosedIncident": false,
+                        "lookbackDuration": "PT1H",
+                        "matchingMethod": "AllEntities",
+                        "groupByEntities": [],
+                        "groupByAlertDetails": [],
+                        "groupByCustomDetails": []
+                    }
+                },
+                "eventGroupingSettings": {
+                    "aggregationKind": "SingleAlert"
+                },
+                "alertDetailsOverride": null,
+                "customDetails": null,
+                "entityMappings": [
+                    {
+                        "entityType": "Account",
+                        "fieldMappings": [
+                            {
+                                "identifier": "FullName",
+                                "columnName": "modifiedBy"
+                            }
+                        ]
+                    },
+                    {
+                        "entityType": "AzureResource",
+                        "fieldMappings": [
+                            {
+                                "identifier": "ResourceId",
+                                "columnName": "policy"
+                            }
+                        ]
+                    },
+                    {
+                        "entityType": "Process",
+                        "fieldMappings": [
+                            {
+                                "identifier": "CommandLine",
+                                "columnName": "OperationName"
+                            }
+                        ]
+                    }
+                ],
+                "sentinelEntitiesMappings": null,
+                "templateVersion": null,
+                "subTechniques": []
+            }
+        }
+    ]
+}
