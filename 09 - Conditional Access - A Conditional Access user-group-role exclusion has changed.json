@@ -1,0 +1,66 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "workspace": {
+            "type": "String"
+        }
+    },
+    "resources": [
+        {
+            "id": "[concat(resourceId('Microsoft.OperationalInsights/workspaces/providers', parameters('workspace'), 'Microsoft.SecurityInsights'),'/alertRules/90000000-0000-0000-0000-000000000000')]",
+            "name": "[concat(parameters('workspace'),'/Microsoft.SecurityInsights/90000000-0000-0000-0000-000000000000')]",
+            "type": "Microsoft.OperationalInsights/workspaces/providers/alertRules",
+            "kind": "Scheduled",
+            "apiVersion": "2023-12-01-preview",
+            "properties": {
+                "displayName": "[concat(parameters('workspace'),' - Conditional Access - A Conditional Access user/group/role exclusion has changed')]",
+                "description": "A Conditional Access user/group/role exclusion has changed in Azure AD.",
+                "severity": "Low",
+                "enabled": true,
+                "query": "// A Conditional Access user/group/role exclusion has changed.\r\nAuditLogs\r\n| where OperationName  in (\"Update conditional access policy\")\r\n| extend excludeUsersOld=extractjson(\"$.conditions.users.excludeUsers\", tostring(TargetResources[0].modifiedProperties[0].oldValue))\r\n| extend excludeGroupsOld=extractjson(\"$.conditions.users.excludeGroups\", tostring(TargetResources[0].modifiedProperties[0].oldValue))\r\n| extend excludeRolesOld=extractjson(\"$.conditions.users.excludeRoles\", tostring(TargetResources[0].modifiedProperties[0].oldValue))\r\n| extend excludeUsersNew=extractjson(\"$.conditions.users.excludeUsers\", tostring(TargetResources[0].modifiedProperties[0].newValue))\r\n| extend excludeGroupsNew=extractjson(\"$.conditions.users.excludeGroups\", tostring(TargetResources[0].modifiedProperties[0].newValue))\r\n| extend excludeRolesNew=extractjson(\"$.conditions.users.excludeRoles\", tostring(TargetResources[0].modifiedProperties[0].newValue))\r\n| where excludeUsersOld != excludeUsersNew or excludeGroupsOld != excludeGroupsNew or excludeRolesOld != excludeRolesNew\r\n| project TimeGenerated, OperationName, policy=TargetResources[0].displayName, modifiedBy=InitiatedBy.user.userPrincipalName, result=Result, excludeUsersOld, excludeUsersNew, excludeGroupsOld, excludeGroupsNew, excludeRolesOld, excludeRolesNew\r\n| order by TimeGenerated desc",
+                "queryFrequency": "PT5M",
+                "queryPeriod": "PT5M",
+                "triggerOperator": "GreaterThan",
+                "triggerThreshold": 0,
+                "suppressionDuration": "PT5H",
+                "suppressionEnabled": false,
+                "startTimeUtc": null,
+                "tactics": [],
+                "techniques": [],
+                "alertRuleTemplateName": null,
+                "incidentConfiguration": {
+                    "createIncident": true,
+                    "groupingConfiguration": {
+                        "enabled": true,
+                        "reopenClosedIncident": false,
+                        "lookbackDuration": "PT1H",
+                        "matchingMethod": "AllEntities",
+                        "groupByEntities": [],
+                        "groupByAlertDetails": [],
+                        "groupByCustomDetails": []
+                    }
+                },
+                "eventGroupingSettings": {
+                    "aggregationKind": "SingleAlert"
+                },
+                "alertDetailsOverride": null,
+                "customDetails": null,
+                "entityMappings": [
+                    {
+                        "entityType": "Account",
+                        "fieldMappings": [
+                            {
+                                "identifier": "Name",
+                                "columnName": "modifiedBy"
+                            }
+                        ]
+                    }
+                ],
+                "sentinelEntitiesMappings": null,
+                "templateVersion": null,
+                "subTechniques": []
+            }
+        }
+    ]
+}
