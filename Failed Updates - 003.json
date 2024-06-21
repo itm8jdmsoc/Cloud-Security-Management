@@ -26,15 +26,25 @@
                 "suppressionDuration": "PT5H",
                 "suppressionEnabled": false,
                 "startTimeUtc": null,
-                "tactics": [],
-                "techniques": [],
+                "tactics": [
+                    "Execution",
+                    "DefenseEvasion",
+                    "InitialAccess"
+                ],
+                "techniques": [
+                    "T1203",
+                    "T1211",
+                    "T0820",
+                    "T0866"
+                ],
+                "subTechniques": [],
                 "alertRuleTemplateName": null,
                 "incidentConfiguration": {
                     "createIncident": true,
                     "groupingConfiguration": {
                         "enabled": false,
                         "reopenClosedIncident": false,
-                        "lookbackDuration": "P1D",
+                        "lookbackDuration": "PT5H",
                         "matchingMethod": "AllEntities",
                         "groupByEntities": [],
                         "groupByAlertDetails": [],
@@ -46,15 +56,17 @@
                 },
                 "alertDetailsOverride": null,
                 "customDetails": {
-                    "Details": "DetailedStatus",
-                    "DeploymentStatus": "DeploymentStatus"
+                    "DeviceCompliance": "CompliantState",
+                    "ErrorDescription": "Description",
+                    "Recommendation": "Recommendation",
+                    "LastConnected": "LastContact"
                 },
                 "entityMappings": [
                     {
                         "entityType": "Host",
                         "fieldMappings": [
                             {
-                                "identifier": "FullName",
+                                "identifier": "HostName",
                                 "columnName": "DeviceName"
                             }
                         ]
@@ -63,15 +75,18 @@
                         "entityType": "Account",
                         "fieldMappings": [
                             {
-                                "identifier": "Name",
+                                "identifier": "FullName",
                                 "columnName": "UserName"
+                            },
+                            {
+                                "identifier": "UPNSuffix",
+                                "columnName": "UPN"
                             }
                         ]
                     }
                 ],
                 "sentinelEntitiesMappings": null,
-                "templateVersion": null,
-                "subTechniques": []
+                "templateVersion": null
             }
         }
     ]
