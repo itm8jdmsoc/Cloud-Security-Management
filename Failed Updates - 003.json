@@ -18,7 +18,7 @@
                 "description": "This analytic will make a LOW incident, if Windows fails to update",
                 "severity": "Low",
                 "enabled": true,
-                "query": "WaaSDeploymentStatus\r\n| where DeploymentStatus == \"Failed\" and DetailedStatus != \"Safeguard Hold\"\r\n| join IntuneDevices on $left.Computer == $right.DeviceName\r\n| project UserEmail, UserName, UPN, DeploymentStatus, DeploymentError, UpdateCategory, UpdateClassification, OriginBuild, TargetBuild,  DeviceState, DeviceName, CompliantState, DetailedStatus",
+                "query": "union\r\n    UCUpdateAlert,\r\n    UCDeviceAlert,\r\n    UCClientUpdateStatus,\r\n    UCClient,\r\n    UCDOStatus,\r\n    UCClientReadinessStatus\r\n| where AlertStatus == \"Active\"\r\n| join IntuneDevices on $left.DeviceName == $right.DeviceName\r\n| where todatetime(LastContact) between (ago(7d) .. now()) //no devices with more than 7 days from last contact will be shown (inactive devices)",
                 "queryFrequency": "P1D",
                 "queryPeriod": "P1D",
                 "triggerOperator": "GreaterThan",
