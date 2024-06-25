@@ -38,7 +38,7 @@ jobs:
     - name: Login to Azure (Attempt 1)
       continue-on-error: true
       id: login1
-      uses: azure/login@v1
+      uses: aazure/login@hf_447_release
       if: ${{ env.cloudEnv == 'AzureCloud' }}
       with:
         creds: ${{ secrets.AZURE_SENTINEL_CREDENTIALS_98f664dccd824699ad1b329bbe2c942a }}
@@ -51,7 +51,7 @@ jobs:
     - name: Login to Azure (Attempt 2)
       continue-on-error: true
       id: login2
-      uses: azure/login@v1
+      uses: azure/login@hf_447_release
       if: ${{ env.cloudEnv == 'AzureCloud' && steps.login1.outcome=='failure' }}
       with:
         creds: ${{ secrets.AZURE_SENTINEL_CREDENTIALS_98f664dccd824699ad1b329bbe2c942a }}
@@ -64,7 +64,7 @@ jobs:
     - name: Login to Azure (Attempt 3)
       continue-on-error: false
       id: login3
-      uses: azure/login@v1
+      uses: azure/login@hf_447_release
       if: ${{ env.cloudEnv == 'AzureCloud' && steps.login2.outcome=='failure'  }}
       with:
         creds: ${{ secrets.AZURE_SENTINEL_CREDENTIALS_98f664dccd824699ad1b329bbe2c942a }}
