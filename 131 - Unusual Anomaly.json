@@ -45,7 +45,7 @@
                     "aggregationKind": "AlertPerResult"
                 },
                 "alertDetailsOverride": {
-                    "alertDisplayNameFormat": "jdm365 - Unusual Anomaly - {{RuleName}}",
+                    "alertDisplayNameFormat": "[concat(parameters('workspace'),' - Unusual Anomaly - {{RuleName}})]",
                     "alertTacticsColumnName": "Tactics"
                 },
                 "customDetails": {
