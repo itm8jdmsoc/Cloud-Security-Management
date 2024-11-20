@@ -1,0 +1,159 @@
+FileName, CommitSha
+37 - Security Service Registry ACL Modification.json,62f5f433b47687e2e1f9e28e922bdc82f7657564
+0-6666-Create incidents based on Azure Active Directory Identity Protection alerts (Medium-High only).json,246712f3eb0aaa802bae58df59b36dc33a6ba264
+152 - User Accounts - Sign in Failure due to CA Spikes.json,b64a296f3829dee3d0da356764a97e0c8774b495
+30 - Possible STRONTIUM attempted credential harvesting.json,a76642fb98a4d371d57ec3382214bd18c2c33e63
+92 - Dev-0960 Prestige ransomware IOCs Oct 2022.json,5d33c8a6350817c720d10c0577ca83880a5fd7cd
+52 - Bulk Changes to Privileged Account Permissions.json,a793f54e8ad04986e48b518e88fa568f6ac03a2e
+28 - Threatview.io - IP Blocklist.json,f0539e92a9f97adc87332534d4579f13f9af1426
+22 - Qbot Spread.json,065b539a78439025abc545772cfe56f50922d7f1
+183 - NRT Suspicious Entra ID Joined Device Update.json,a0352d89889c96aa3314612eebf83555c653983b
+13 - Agent Tesla Spyware Detected.json,3803cf8704b63d0af588e6f63faf2ba08456f23d
+155 - Windows Binaries Executed from Non-Default Directory.json,010127b24f19b529122951b151284fe5cd71eea4
+48 - Zinc Actor IOCs files - October 2022.json,fd49d85a9fd5c9f8b6a7be69fc91154dfd6b2470
+19 - Dev-0530 - July 2022.json,847759beef2a216b9a45a4c32f7a4cde098ed3b1
+02 - Possible STRONTIUM attempted credential harvesting - MTP.json,6717f5e2a3b448bd76b54ff850fc08aafd9aee3a
+73 - Suspicious application consent similar to PwnAuth.json,0abeeb08e482562b1a614e6b1c5ad188161f0b82
+76 - Account created or deleted by non-approved user.json,d00c68057709d74ee6fcf805ac19b5f7bc81563c
+Defender client reported an error - 007.json,8f998bf87e1a5ab179b5368d60e1aae1955ec693
+04 - Conditional Access - A Conditional Access app exclusion has changed.json,ed7a4b2d251deb1fd81e24e256b7fd12fb9cf3f0
+05 - Conditional Access - A Conditional Access Device platforms condition has changed (the Device platforms condition can be spoofed).json,a93ed019ef1f49e34ee9e9021ac7a1bcf8bff698
+179 - Possible AiTM Phishing Attempt Against Azure AD.json,8338b2285c6e74e8c0bc0de574d750b3c72e8893
+32 - Threatview.io - URL Blocklist.json,8dd52875c3b878c8e3ea3d8857dd5fc138eee24c
+133 - Credential Dumping Tools - Service Installation.json,69c23d13a0d08a0250be741cbc794a9d1a19b6f6
+35 - Authentication Methods Changed for Privileged Account.json,38b0a9b98d9f2f01bee902090490f675b409cec5
+124 - Authentications of Privileged Accounts Outside of Expected Controls.json,f0780501090d2a33fe021df063b353d4beae5127
+132 - Group created then added to built in domain local or global group.json,81c03fffb0329d5f757cb117c3bd1034075b254a
+41 - Modifications to High Privileged Accounts.json,4062dc9f3dfe50b8ea9f720762b6dda269b182f0
+118 - AV detections related to Tarrask malware.json,ce0cbd67c4ae90597896d548ea0348684ed2dfd2
+45 - Add malicious user to Admins and RDP users group via PowerShell.json,1ea8a270e830e8c1e753148387b9f489f556e23e
+46 - SEABORGIUM-Domain IOCs.json,d6af2e501d7a99f369886c0145706ced5d189df3
+142 - Suspicious modification of Global Administrator user properties.json,5b4feaeb3cae39dedaac63a586cf741ac03d4792
+75 - New User Assigned to Privileged Role.json,6631c14d3388fce97b95b7e01e87e765702e7536
+08 - Conditional Access - A Conditional Access policy was put into report-only mode.json,bd94f733b0f2f62dfade374ad62938b70dcdd0ff
+141 - Changes to PIM Settings.json,abeb09e6bd687ca203fb2fb965731efd7861e244
+27 - Threatview.io - OSINT Threat Feed.json,d66f82ea15aac9b380e7e8a99a3075be1f50238c
+159 - Scheduled Task Hide.json,21f94dcde585d0bad5ad8fc96fc5a2037e3de8ea
+125 - Mass Download & copy to USB device by single user.json,385e1655bac577f42bacd8efc9c0363907fde9af
+07 - Conditional Access - A Conditional Access policy was disabled.json,a55f056ba84cd9a050d90c86d7086faccb63666b
+56 - Office policy tampering.json,bb1da06e7cd32989b8c5db921b81a85cacf3cedc
+09 - Conditional Access - A Conditional Access user-group-role exclusion has changed.json,516c02a132c792c6fa680ecf4cf71d13e986ad0b
+Heimdal Agent Error - 005.json,b57ec4176e273a38e757c78fabc1cb8a9a63b859
+Bitlocker volume master key error - 002.json,422d54a896d933bdbe9055ab8bfe88eb70c1a73b
+63 - Unique DEV-0832 command line activity.json,fc7cfa8a9105d1f0aef2aaca5acdc4110e9ebbb9
+06 - Conditional Access - A Conditional Access policy was deleted.json,737c79b7a1392212216c333e4b1ab4752a2c2ba9
+178 - Powershell Empire Cmdlets Executed in Command Line.json,f6814535916929e70f5f1f5ee8e6d4a123e06ee5
+84 - New access credential added to Application or Service Principal.json,3d4adfbb8dbd6ae6b9b81c09563c8c72a1cd73dc
+85 - Password spray attack against Azure AD application.json,aa1fe97c07872a49aa02ee1de4cd1651c8d0baf2
+68 - Anomalous action performed in tenant by privileged user.json,6bf5a46e01b26b198f58a42734839534ea874a21
+107 - Probable AdFind Recon Tool Usage.json,a02a610d4bace7ba415a615322538d5fb7f9ad1c
+Multiple accounts registered with same mobilenumber - 012.json,e9b1fd2a933e067f5c963a987c7341f8032e607b
+154 - Windows Binaries Lolbins Renamed.json,90877fcb4420a9fdd2c5277177b6bc9f389d4758
+197 - MosaicLoader.json,89efa2c3d1bbc0b29feb5086eced44a53d41108f
+169 - End-user consent stopped due to risk-based consent.json,38d6f510af96ecf80c8279f1e471b0523ccf7689
+171 - Anomalous Single Factor Signin.json,6c74981be26112159ca51c082eebfe8bf1264021
+34 - User Locked due to too many attempts.json,10a3ecfdab4a032ea70ebd8a52867aa984efdba2
+61 - Potential BlackLotus bootkit bypasses UEFI protections.json,1ac31910ef888338996b163f5c92ec643d93a715
+78 - Potential brute force attack against a Cloud PC.json,65cad36bcc223ab0969f622d3dd8141f27e6e68e
+Azure Active Directory User Risk Event - 001.json,548831c9c2b9f64d61c4c211dc4289583671199c
+79 - Detect PIM Alert Disabling activity.json,5657fec411e0e51b3ce582273b641e0f727ba714
+151 - New defense evasion technique, March 2023 - DEV-0201.json,b1066c2ca6610882458c57c733482339cdbc62a2
+161 - Service Principal Assigned Privileged Role.json,45cd2b4a16dadef2f28a3361ab110177e5549625
+143 - Guest Users Invited to Tenant by New Inviters.json,1b60a363d7db0622fba7aecfe498233ba7cf645a
+122 - SharePointFileOperation via previously unseen IPs.json,bda84f93a91634ecc45c0948aa6021bc20417674
+16 - Darkcomet RAT Detected.json,8898d7d7300fe9530d36f7d89a16f1c42eec11af
+25 - Threatview.io - C2 Hunt Feed.json,7cfac2ff14cf41b3df90100776f248803faecd0c
+105 - AV detections related to Hive Ransomware.json,6820f2852f36dd6de9ba52cdc86d31e3e6522d1f
+86 - Potential Build Process Compromise - MDE.json,4a210e281d29c2ae6a9ba62b04048218482390bf
+104 - AV detections related to SpringShell Vulnerability.json,2a1beb5961a74b52dedc84b9f31691aec9438bbf
+77 - Anomalous sign-in location by user account and authenticating application.json,2e4dd50ea67a61f974bfc33db452e4061d5f7134
+158 - Creation of expensive computes in Azure.json,50de3c6522e3efbb7b125d9c146cd5cd6c5e1466
+18 - Dev-0530 File Extension Rename.json,807d13f71e01c4406cc7a45a3cfdf40945f4eab6
+64 - NTDS Dumping.json,54b3810851f54e2ba89d2c9e4071cd37cb99bc55
+91 - Dev-0796 Worldwide Click Fraud.json,22cdde21287ea8fe3a8755ae2c74e110d083bbe6
+74 - Attempts to sign in to disabled accounts.json,2ba342a7965496ff566bcc1f7a105a2e903a7db7
+42 - WEBBFUSCATOR Campaign New TTPS - Detection & Response.json,c1048fc11535d94b54c6dd558d7c5765892b6c98
+23 - Red Teaming Tool BRc4 - Detection Evasion.json,d753836e7894f7a0a87b5720da78896c70c29dda
+87 - Rare application consent.json,90e3e8c11f82ea14e76ef9ba5a75c32a9bbee79e
+148 - Tool lprofile IceXLoader.json,d9cb28ab770c8117e87fa0d5c838a1432a9180ff
+193 - Unusual identity creation using exchange powershell.json,cd4c7c1e0eed2834bc61249778b69ee21fb48ec9
+127 - Suspicious Login from deleted guest account.json,6dae3400da739404acc723abf7065b9f6c9e2ed5
+55 - Multiple users email forwarded to same destination.json,f4963defc615c17d55558e2768dcf90f63fec586
+81 - External guest invitation followed by Azure AD PowerShell signin.json,6ba960d478ff54e6d12276c979a27ac9b86c1d0b
+117 - TI Map IP Entity to AzureActivity.json,8b8c856cedba77ac7ff592cd45873a7adcb98be4
+0-7777 - Microsoft Defender Threat Intelligence Analytics.json,d565330c6f5dccaf5fb83952bb00f33ab6ec46e9
+26 - Threatview.io - Domain Blocklist.json,c826678e8e466d785cde45724681bcc40c5ac9bf
+Suspicious Entra ID Joined Device Update.json,289ca7fc756af11c66727104a684568903da4775
+128 - Dumping LSASS Process Into a File.json,392c94357773e98966a2522e36a75c64ad73efef
+177 - Cross-tenant Access Settings Organization Outbound Direct Settings Changed.json,9b5911843225a8334a0e83c36e974bbf73c00e56
+98 - TI map IP entity to OfficeActivity.json,7875e59c5a057d522d15e18618d29757a2d1887d
+Signin without multifactor authentication - 006.json,92a317912ad705be1b910f4bb9681c44391b215b
+82 - Failed host logons but success logon to AzureAD.json,e374adb434afebbacc0b3bf08bac0e4291704076
+181 - Azure Diagnostic settings removed from a resource.json,da8514898b6801ca0dcc52f6df381367c4945ed5
+135 - Mass Cloud resource deletions Time Series Anomaly.json,7eb12c7043eac0f51607291e86f8da51f8a44c27
+71 - User agent search for log4j exploitation attempt.json,82750fdc25d61be677fe1818cfefd23cf3b83223
+58 - Dev-0270 Registry IOC - September 2022.json,81b92e04bd4eb961017225d8f121f0fbf7e4cea5
+53 - Exchange AuditLog disabled.json,07ebc073dd6730f99797b3bb8dbe5eaaf89f6ddc
+24 - Threatview.io - Bitcoin Address Intel.json,c09cfee990ec7a5816257f211434fb6256ccc4c1
+0-1111- Create incidents based on Microsoft Defender for Cloud.json,b0c795999c4afe67f48ddd7b3f72cd0919bcc596
+Security software changed status - 008.json,3d496f461933ccb6c3e671753356a1c761593e8f
+114 - Malicious export functions in Bumblebee DLL.json,25bcbf99536ce2c63b2467d3c4c169b5f87e4ba6
+54 - Malicious Inbox Rule.json,e0dcac814b99edf1ea686858037e17ca8d44b22a
+33- TOR Ip-addresses.json,c32071abd6d463a1d86ec2d93527d0d1f9375b75
+185 - Cross-tenant Access Settings Organization Outbound Collaboration Settings Changed.json,d7b46cbe9f39f4d2a71b9fff566487e18cd50757
+49 - AV detections related to Zinc actors.json,6609eba2fc4c8536514e02606e246ed7de6d3b67
+83 - MFA disabled for a user.json,76788f9ecfde93de67a1dcf7fcf303e85bc6e763
+Failed Updates - 003.json,f40e91f73a0191d550d4b5259a9fdbf51fef0662
+12 - Conditional Access - A new Conditional Access policy was created.json,13511121fac63132f86f26de648c3f912a91d5be
+139 - Addition of a Temporary Access Pass to a Privileged Account.json,087a6de3ffaf00496159c551f7390bbdeae100a7
+Unit with less than 2% available disc space - 004.json,2d0eab6be3ba831f37677609549038d000c26c85
+174 - Malicious BEC Inbox Rule.json,2ce87743bb2342cea064010cb5e22b06a4a408f2
+65 - CoreBackUp Deletion in correlation with other related security alerts.json,6b5fd8766c87d18431840eda2e89b3ded430b21f
+131 - Unusual Anomaly.json,669a8a9a72351f5a2316b6ea8dc594ca89f28f1e
+137 - Services related to TOR.json,516feeb029c495ee7c5551f694b49ee11e2099e9
+145 - Admin promotion after Role Management Application Permission Grant.json,478ec6047963f9fe5338225b5f122bc985882d5e
+176 - Multiple Password Reset by user.json,7f6b47025ead09cfd8e612573e663b3bf35fa4a2
+121 - SharePointFileOperation via devices with previously unseen user agents.json,47098e950031e17c89ad3920c3e74a4abc129e48
+31 - Threatview.io - SHA File Hash Blocklist.json,dd84e4854231980fd51aa1d34956674a87acb16c
+89 - Dev-0796 Worldwide Click Fraud Potential Related Values.json,665ee722cc0388e9f1b66e40b1298c941250fa8d
+123 - Privileged Accounts - Sign in Failure Spikes.json,d4fc1d18d4a6222286ef287e93b073aab1b18fd4
+116 - Possible Emotet activity.json,10594999339b1b40cc79bfc24b9f6592bc7754e7
+14 - Bumblebee Malware Detected.json,70b777c67c0def99e1cfc6ff2197a0abc5f0a5d2
+175 - BumbleBee process execution.json,87676d4588f7b43ecf057a73b27848b30e173f5d
+146 - AAD Local Device Join Information and Transport Key Registry Keys Access.json,9bc05aacea042447487bf13ebe1bc125496a4eac
+129 - Credential Dumping Tools - File Artifacts.json,3211d917c43244b16ce2de6aa25acad66c254f44
+108 - Potential malicious files dropped by recent nanocore samples.json,79d78665a5c57275a279dc6c7eea1d8ef2b01397
+39 - Brute force attack against Azure Portal.json,df951860da4641c5bdf073de0861a4d0a768813d
+62 - Abnormal download and copy to USB.json,f537344a10bedf53412957206450896348d28bd8
+184 - MFA Spamming followed by Successful login.json,7177499516b9241bf3630d17c7fd26b3dab78633
+138 - Microsoft signed drivers being used maliciously.json,68cf31b27b7316dcef8b8fbd3ce1cf552255122d
+147 - BROMINE uses custom RAT called ZORROAR for espionage.json,4ca55099089cf316b547992c99a319dbb076c942
+67 - Anomalous login activity originated from Botnet, Tor proxy or C2.json,1fd20f10239a608e339068954aeaf308c00e2d70
+101 - TI Map URL Entity to AuditLogs.json,2e9ce34819a729ba351a9189b6653f90f6ff9682
+162 - Service Principal Assigned App Role With Sensitive Access.json,4188c99d954812bae3b2c0213d2f3383679fea1d
+TPM chip Error - 010.json,53150e3890c7a9e92aede1e99ccd53d971be00fe
+109 - Nanocore network indicators.json,de8d4ef545002c907ef0d91932dd787fb22b9a7a
+106 - URL Added to Application from Unknown Domain.json,844543a4423a8448e854b8e316c02dc49a4eed13
+38 - Distributed Password cracking attempts in AzureAD.json,357532b048ce5fc2ac1d6c42af6d7810d0539e63
+11 - Conditional Access - A Conditional Access policy was updated.json,2fa3b63b786eacb3f6c17ac4257fe0b9b6fa8009
+157 - Process executed from binary hidden in Base64 encoded file.json,08584ee7e1ca16a6760bba5edce0b99cf91afd20
+182 - Cross-tenant Access Settings Organization Deleted.json,6d6a82ace6e738219e7aa4d867759d1bcb8ccdcc
+17 - AV detections related to Dev-0530 actors.json,4b168ff3be807c148d7ec63041d81e4990852281
+51 - Suspicious mapistub.dll file creation.json,2c1afc177dad19b1da841014a9118f56965148f2
+112 - Password spray attack against Azure AD Seamless SSO.json,707db6cfe0351606f5a5973a3191227f214fb913
+72 - Suspicious application consent similar to O365 Attack Toolkit.json,7acc622391088bd9100abc7a9de6733421d811f3
+Risky User - 011.json,eb73bcb09afa8d7920a0796954ffd6d018ad865d
+69 - Log4j vulnerability exploit aka Log4Shell IP IOC.json,538b205d8951c0b300774879984a39e353c385eb
+115 - Procdump dumping LSASS credentials.json,9312495aa475937adac6fcb399c56da6672da173
+136 - Multiple activity groups deploy IcedID as initial access vector.json,570c315d9a6787834f770c769920b8663111cfa3
+29 - Threatview.io - MD5 Hash Blocklist.json,23492faae0e0b454b872581368d368da7529f35e
+44 - Powershell trying to add exclusion path for Microsoft Defender of ProgramData.json,90545b14b80585cdcfc82ceee0920857836081fc
+173 - Potential registry key created by recent nanocore samples.json,3a0dad6fb1069e987248eb00b7c111fb758fde59
+93 - Dev-0960 Commands launched using impacted WMIexec.json,7b152d4a64379df4fd3af21a91cefe680350ac6a
+168 - Midnight Blizzard - Script payload stored in Registry.json,079c64c256468a37b7abdcf5cab767bb797ef013
+166 - Potential Fodhelper UAC Bypass.json,ea98d9d4cf989cd9b0d4ad6bd8b5590fb6691cf4
+15 - Cutwail Malware Detected.json,e0ea207ba275f7e24817b045b03a1f8daced11d8
+156 - User State changed from Guest to Member.json,280ce82b8382a13d7f1ac4926dffb6a35bb8d146
+111 - Exchange workflow MailItems Accessed operation anomaly.json,79b6913466faf18d187e3eb93e1eaf2873f4c8a9
+59 - AV detections related to Ukraine threats.json,2ffb360fc44312dfeef46b524b9364768119e355
+
